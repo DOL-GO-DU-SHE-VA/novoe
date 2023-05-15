@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.todoplanner.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.todoplanner.fragments.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/loginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_listOfTasksFragment"
+            app:destination="@id/listOfTasksFragment"
+            app:popUpTo="@id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.todoplanner.fragments.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_listOfTasksFragment"
+            app:destination="@id/listOfTasksFragment"
+            app:popUpTo="@id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.todoplanner.fragments.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task" />
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.example.todoplanner.fragments.EditTaskFragment"
+        android:label="fragment_edit_task"
+        tools:layout="@layout/fragment_edit_task" />
+    <fragment
+        android:id="@+id/listOfTasksFragment"
+        android:name="com.example.todoplanner.fragments.ListOfTasksFragment"
+        android:label="fragment_list_of_tasks"
+        tools:layout="@layout/fragment_list_of_tasks" >
+        <action
+            android:id="@+id/action_listOfTasksFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph" />
+        <action
+            android:id="@+id/action_listOfTasksFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment"
+            app:popUpTo="@id/listOfTasksFragment" />
+        <action
+            android:id="@+id/action_listOfTasksFragment_to_oneTaskFragment"
+            app:destination="@id/oneTaskFragment"
+            app:popUpTo="@id/listOfTasksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneTaskFragment"
+        android:name="com.example.todoplanner.fragments.OneTaskFragment"
+        android:label="fragment_one_task"
+        tools:layout="@layout/fragment_one_task" >
+        <action
+            android:id="@+id/action_oneTaskFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment" />
+    </fragment>
+</navigation>

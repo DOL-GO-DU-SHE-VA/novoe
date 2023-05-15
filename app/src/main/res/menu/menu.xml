@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/setAdmin"
+        app:showAsAction="never"
+        android:title="@string/beHead"/>
+
+    <item
+        android:id="@+id/sortBy"
+        app:showAsAction="never"
+        android:title="@string/sort"/>
+
+    <item
+        android:id="@+id/logOut"
+        app:showAsAction="never"
+        android:title="@string/logOut"/>
+
+</menu>

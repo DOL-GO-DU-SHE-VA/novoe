@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ToDo Planner</string>
+    <!-- Заголовки задач -->
+    <string name="title">Заголовок</string>
+    <string name="description">Описание</string>
+    <!-- Поля задач с параметрами -->
+    <string name="statusWE">Статус: %1$s</string>
+    <string name="priorityWE">Приоритет: %1$s</string>
+    <string name="deadlineWE">Дата завершения: %1$s</string>
+    <string name="responsibleWE">Ответственный: %1$s</string>
+    <string name="ownerWE">Создатель: %1$s</string>
+    <string name="dateOfUpdaterWE">Дата обновления: %1$s</string>
+    <string name="dateOfCreationWE">Дата создания: %1$s</string>
+    <!-- Поля задачи -->
+    <string name="status">Статус</string>
+    <string name="priority">Приоритет</string>
+    <string name="deadline">Дата завершения</string>
+    <string name="responsible">Ответственный</string>
+    <string name="owner">Создатель</string>
+    <string name="dateOfUpdater">Дата обновления</string>
+    <string name="dateOfCreation">Дата создания</string>
+    <!-- Пункты меню -->
+    <string name="beHead">Стать руководителем</string>
+    <string name="sort">Отсортировать</string>
+    <string name="passwordHead">Пароль руководителя</string>
+    <string name="listOfTasks">Список задач</string>
+    <string name="logOut">Выйти из аккаунта</string>
+    <!-- Названия кнопок -->
+    <string name="addTask">Добавить задачу</string>
+    <string name="editTask">Изменить задачу</string>
+    <string name="reg">Зарегистрироваться</string>
+    <string name="editStatus">Изменить статус</string>
+    <string name="change">Изменить</string>
+    <string name="delete">Удалить</string>
+    <string name="auth">Авторизоваться</string>
+    <string name="toRegAccount">У меня ещё нет аккаунта</string>
+    <!-- Метаданные -->
+    <string name="firstName">Фамилия</string>
+    <string name="middleName">Имя</string>
+    <string name="lastName">Отчество</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
